@@ -86,9 +86,10 @@
         android:id="@+id/btn_acept"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="36dp"
         android:text="ACEPTAR"
         app:layout_constraintEnd_toEndOf="@+id/editText_ciudad"
+        app:layout_constraintHorizontal_bias="0.481"
         app:layout_constraintStart_toStartOf="@+id/editText_ciudad"
         app:layout_constraintTop_toBottomOf="@+id/editText_ciudad" />
 
@@ -103,5 +104,25 @@
         app:layout_constraintEnd_toEndOf="@+id/editText_correo"
         app:layout_constraintStart_toStartOf="@+id/editText_correo"
         app:layout_constraintTop_toBottomOf="@+id/editText_correo" />
+
+    <TextView
+        android:id="@+id/longitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/btn_acept"
+        app:layout_constraintStart_toStartOf="@+id/btn_acept"
+        app:layout_constraintTop_toBottomOf="@+id/btn_acept" />
+
+    <TextView
+        android:id="@+id/latitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/longitud"
+        app:layout_constraintStart_toStartOf="@+id/longitud"
+        app:layout_constraintTop_toTopOf="@+id/longitud" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
