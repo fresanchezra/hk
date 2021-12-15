@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeHogar">
+
+    <Button
+        android:id="@+id/btn_recogida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="152dp"
+        android:text="PROGRAMAR RECOGIDA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_ehogar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:text="ESTADISTICAS"
+        app:layout_constraintEnd_toEndOf="@+id/btn_recogida"
+        app:layout_constraintStart_toStartOf="@+id/btn_recogida"
+        app:layout_constraintTop_toBottomOf="@+id/btn_recogida" />
+
+    <Button
+        android:id="@+id/btn_phogar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:text="CAPACITACION"
+        app:layout_constraintEnd_toEndOf="@+id/btn_ehogar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_ehogar"
+        app:layout_constraintTop_toBottomOf="@+id/btn_ehogar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

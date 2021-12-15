@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btn_aceptar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registro">
+
+    <RadioGroup
+        android:id="@+id/btn_radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:checkedButton="@id/rb_hogar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rb_hogar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Hogar" />
+
+        <RadioButton
+            android:id="@+id/rb_reciclador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reciclador" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editText_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/btn_radioGroup"
+        app:layout_constraintStart_toStartOf="@+id/btn_radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/btn_radioGroup" />
+
+    <EditText
+        android:id="@+id/editText_correo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Correo"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/editText_nombre"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editText_nombre"
+        app:layout_constraintTop_toBottomOf="@+id/editText_nombre" />
+
+    <EditText
+        android:id="@+id/editText_direccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Direccion"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/editText_clavereg"
+        app:layout_constraintStart_toStartOf="@+id/editText_clavereg"
+        app:layout_constraintTop_toBottomOf="@+id/editText_clavereg" />
+
+    <EditText
+        android:id="@+id/editText_ciudad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Ciudad"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/editText_direccion"
+        app:layout_constraintStart_toStartOf="@+id/editText_direccion"
+        app:layout_constraintTop_toBottomOf="@+id/editText_direccion" />
+
+    <Button
+        android:id="@+id/btn_acept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="ACEPTAR"
+        app:layout_constraintEnd_toEndOf="@+id/editText_ciudad"
+        app:layout_constraintStart_toStartOf="@+id/editText_ciudad"
+        app:layout_constraintTop_toBottomOf="@+id/editText_ciudad" />
+
+    <EditText
+        android:id="@+id/editText_clavereg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Clave"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/editText_correo"
+        app:layout_constraintStart_toStartOf="@+id/editText_correo"
+        app:layout_constraintTop_toBottomOf="@+id/editText_correo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

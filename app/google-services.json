@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "817052447209",
+    "project_id": "recycler-c6516",
+    "storage_bucket": "recycler-c6516.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:817052447209:android:c905dd30f14202a471db78",
+        "android_client_info": {
+          "package_name": "com.fivetic.recycler"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "817052447209-krf19fkka85ht9hm53v9fcguskcffcg4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIzfdLwU7UkhSUW7atDKQt8lPhnz8Fi3E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "817052447209-krf19fkka85ht9hm53v9fcguskcffcg4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
