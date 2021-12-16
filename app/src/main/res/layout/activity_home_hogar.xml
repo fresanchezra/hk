@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="152dp"
-        android:text="PROGRAMAR RECOGIDA"
+        android:text="SOLICITAR RECOGIDA"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,4 +37,14 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/btn_ehogar"
         app:layout_constraintTop_toBottomOf="@+id/btn_ehogar" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:text="HOME USUARIO HOGAR"
+        app:layout_constraintEnd_toEndOf="@+id/btn_phogar"
+        app:layout_constraintStart_toStartOf="@+id/btn_phogar"
+        app:layout_constraintTop_toBottomOf="@+id/btn_phogar" />
 </androidx.constraintlayout.widget.ConstraintLayout>

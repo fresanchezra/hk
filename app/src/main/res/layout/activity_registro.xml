@@ -8,42 +8,39 @@
     tools:context=".Registro">
 
     <RadioGroup
-        android:id="@+id/btn_radioGroup"
+        android:id="@+id/rg_tipos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:checkedButton="@id/rb_hogar"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <RadioButton
             android:id="@+id/rb_hogar"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:checked="false"
             android:text="Hogar" />
 
         <RadioButton
             android:id="@+id/rb_reciclador"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Reciclador" />
-
     </RadioGroup>
 
     <EditText
         android:id="@+id/editText_nombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="32dp"
         android:ems="10"
         android:hint="Nombre"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="@+id/btn_radioGroup"
-        app:layout_constraintStart_toStartOf="@+id/btn_radioGroup"
-        app:layout_constraintTop_toBottomOf="@+id/btn_radioGroup" />
+        app:layout_constraintEnd_toEndOf="@+id/rg_tipos"
+        app:layout_constraintStart_toStartOf="@+id/rg_tipos"
+        app:layout_constraintTop_toBottomOf="@+id/rg_tipos" />
 
     <EditText
         android:id="@+id/editText_correo"
@@ -104,25 +101,5 @@
         app:layout_constraintEnd_toEndOf="@+id/editText_correo"
         app:layout_constraintStart_toStartOf="@+id/editText_correo"
         app:layout_constraintTop_toBottomOf="@+id/editText_correo" />
-
-    <TextView
-        android:id="@+id/longitud"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="@+id/btn_acept"
-        app:layout_constraintStart_toStartOf="@+id/btn_acept"
-        app:layout_constraintTop_toBottomOf="@+id/btn_acept" />
-
-    <TextView
-        android:id="@+id/latitud"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="@+id/longitud"
-        app:layout_constraintStart_toStartOf="@+id/longitud"
-        app:layout_constraintTop_toTopOf="@+id/longitud" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -36,13 +36,14 @@ import com.google.firebase.database.ValueEventListener;
 public class Registro extends AppCompatActivity implements View.OnClickListener{
 
     private FirebaseAuth mAuth ;
-    private RadioGroup btn_radioGroup ;
+    private RadioGroup rg_tipos ;
     private EditText editText_nombre ;
     private EditText editText_correo ;
     private EditText editText_clavereg ;
     private EditText editText_direccion ;
     private EditText editText_ciudad ;
     private Button btn_acept ;
+    private String tipo ;
     /*private LocationManager ubicacion;
     private TextView TextViewlatitud;
     private TextView TextViewlongitud;*/
@@ -54,7 +55,7 @@ public class Registro extends AppCompatActivity implements View.OnClickListener{
 
         mAuth = FirebaseAuth.getInstance();
 
-        btn_radioGroup = findViewById(R.id.btn_radioGroup) ;
+        rg_tipos = findViewById(R.id.rg_tipos) ;
         editText_nombre = findViewById(R.id.editText_nombre) ;
         editText_correo = findViewById(R.id.editText_correo) ;
         editText_clavereg = findViewById(R.id.editText_clavereg) ;
@@ -64,13 +65,30 @@ public class Registro extends AppCompatActivity implements View.OnClickListener{
 
         /*localizacion();
         registrarLocalizacion();*/
+        rg_tipos.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                if(checkedId == R.id.rb_hogar){
+
+                    tipo = "hogar" ;
+                }else if(checkedId == R.id.rb_reciclador) {
+
+                    tipo = "reciclador" ;
+
+                }
+
+            }
+        });
+
+
+
         btn_acept.setOnClickListener(this);
     }
 
     public void onClick(View v) {
 
 
-        String tipo, nombre, correo, clave, direccion, ciudad;
+        String nombre, correo, clave, direccion, ciudad;
 
         nombre = editText_nombre.getText().toString();
         correo = editText_correo.getText().toString();
@@ -78,7 +96,9 @@ public class Registro extends AppCompatActivity implements View.OnClickListener{
         direccion = editText_direccion.getText().toString();
         ciudad = editText_ciudad.getText().toString();
 
-        tipo = "Hogar";
+
+
+
         Pattern pat_num = Pattern.compile("[0-9]");
         Pattern pat_esp = Pattern.compile("[$&+,:;=?@#|'<>.^*()%!-]");
         Pattern pat_alfa = Pattern.compile("[A-Z]");
@@ -94,7 +114,7 @@ public class Registro extends AppCompatActivity implements View.OnClickListener{
 
         // implementar geolocalizacion
         // funciones de localizacion
-
+        System.out.println("valor del tipo----->" + tipo) ;
         if(clave.length()>=8){
 
               if (match_found_clave_esp || match_found_clave_num || match_found_clave_alfa){
